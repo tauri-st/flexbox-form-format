@@ -190,12 +190,7 @@ textarea.form__input {
   }
 }
 
-/* Layout Styles
- * 
- * All styles above this line are for design purposes only.
- * For these challenges do not change any of the code above this point.
- * However, you can reference them for learning purposes.
- */
+/* Layout Styles */
 
 .header {
   display: flex;
@@ -205,12 +200,9 @@ textarea.form__input {
 }
 
 .nav {
-  width: 100%;
-  text-align: center;
-}
-
-.nav__item {
-  display: inline;
+  display: flex;
+  flex: 1 0 auto;
+  justify-content: center;
 }
 
 .form {
@@ -219,25 +211,20 @@ textarea.form__input {
 }
 
 .form__section {
-  width: 100%;
+  flex: 1 1 525px;
+}
+
+.form__section--two {
+  flex-grow: 3;
 }
 
 @media (min-width: 640px) {
   .nav {
-    text-align: right;
-    width: calc(100% - 130px - 124px - 64px);
+    justify-content: flex-end;
   }
 }
 
 @media (min-width: 1024px) {
-  .form__section--one {
-    width: 525px;
-  }
-
-  .form__section--two {
-    width: calc(100% - 525px);
-  }
-
   .nav {
     width: calc(100% - 130px - 330px - 124px - 64px);
   }
