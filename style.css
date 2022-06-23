@@ -215,7 +215,19 @@ textarea.form__input {
 }
 
 .form__section--two {
+  display: flex;
+  flex-direction: column;
   flex-grow: 3;
+}
+
+.form__section--two .form__field {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+textarea.form__input {
+  flex: 1;
 }
 
 @media (min-width: 640px) {
