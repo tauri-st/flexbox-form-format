@@ -108,6 +108,12 @@ body {
   margin-right: 6px;
 }
 
+.form__info > :first-child {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .form__section {
   padding: 24px;
 }
