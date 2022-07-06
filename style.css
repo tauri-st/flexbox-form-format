@@ -114,6 +114,20 @@ body {
   justify-content: space-between;
 }
 
+.form__scale-input:checked ~ .form__scale-value {
+  background-color: #55daa2;
+}
+
+.form__scale-input:invalid ~ .form__scale-value,
+.form__input:invalid {
+  border: 1px solid #ee4949;
+}
+
+.form__scale-input {
+  left: -9999px;
+  position: absolute;
+}
+
 .form__section {
   padding: 24px;
 }
